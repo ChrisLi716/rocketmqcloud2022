@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: rocketmqcloud2022
+server:
+  port: 8081
+  servlet:
+    encoding:
+      charset: UTF-8
+    context-path: /rocketmq
+  tomcat:
+    uri-encoding: UTF-8
+
+
+rocketmq:
+  name-server: master:9876
+  producer:
+    group: rocketmq-producer-group-001
+  consumer:
+    topic: cloud003
+    group: cloud-consumer-group-003
